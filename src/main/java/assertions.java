@@ -34,18 +34,18 @@ public class assertions {
 		 */
 		
 		//assertEquals	
-		driver.navigate().to("https://www.browserstack.com/");
-		String actualTitle = driver.getTitle();
-		String expectedTitle = "most Reliable App & Cross Browser Testing Platform | BrowserStack";
-		Assert.assertEquals(actualTitle, expectedTitle, "Page title does not match the expected value");
-		driver.quit();
-		
-		//assertNotEquals
 //		driver.navigate().to("https://www.browserstack.com/");
 //		String actualTitle = driver.getTitle();
-//		String expectedTitle = "Incorrect Title";
-//		Assert.assertNotEquals(actualTitle, expectedTitle, "Titles should not match, but they do");
+//		String expectedTitle = "most Reliable App & Cross Browser Testing Platform | BrowserStack";
+//		Assert.assertEquals(actualTitle, expectedTitle, "Page title does not match the expected value");
 //		driver.quit();
+		
+		//assertNotEquals
+		driver.navigate().to("https://www.browserstack.com/");
+		String actualTitle = driver.getTitle();
+		String expectedTitle = "Incorrect Title";
+		Assert.assertNotEquals(actualTitle, expectedTitle, "Titles should not match, but they do");
+		driver.quit();
 		
 		//assertTrue, assertFalse, assertNull, assertNotNull
 		
