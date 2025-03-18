@@ -41,11 +41,11 @@ public class assertions {
 //		driver.quit();
 		
 		//assertNotEquals
-//		driver.navigate().to("https://www.browserstack.com/");
-//		String actualTitle = driver.getTitle();
-//		String expectedTitle = "Incorrect Title";
-//		Assert.assertNotEquals(actualTitle, expectedTitle, "Titles should not match, but they do");
-//		driver.quit();
+		driver.navigate().to("https://www.browserstack.com/");
+		String actualTitle = driver.getTitle();
+		String expectedTitle = "Incorrect Title";
+		Assert.assertNotEquals(actualTitle, expectedTitle, "Titles should not match, but they do");
+		driver.quit();
 		
 		//assertTrue, assertFalse, assertNull, assertNotNull
 		
