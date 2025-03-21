@@ -22,18 +22,21 @@ public class exception_handling {
 
 		driver.get("https://login.salesforce.com");
 		Thread.sleep(3000);
+		driver.quit();
+		driver.get("https://google.com");
+
 
 		//NoSuchWindow/Frame
 		//driver.switchTo().frame("frame0");
 				
-		driver.findElement(By.xpath("//input[@id='username']")).sendKeys("hpotter5@test.com");
-		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Testing@2024");
-		driver.findElement(By.xpath("//input[@value='Log In']")).click();
+//		driver.findElement(By.xpath("//input[@id='username']")).sendKeys("hpotter5@test.com");
+//		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Testing@2024");
+//		driver.findElement(By.xpath("//input[@value='Log In']")).click();
 
-		WebElement wbLeadsLink = driver.findElement(By.xpath("//a//span[text()='Accounts']"));
+		//WebElement wbLeadsLink = driver.findElement(By.xpath("//a//span[text()='Accounts']"));
 		
 		//ElementNotInteractable or JavaScriptExecutorException 
-		wbLeadsLink.click();
+		//wbLeadsLink.click();
 		
 		//NoSuchElementException 
 		//js.executeScript("arguments[0].click();", wbLeadsLink);
